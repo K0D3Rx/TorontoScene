@@ -1,4 +1,4 @@
 # TorontoScene
 Toronto's music scene website
 
-still under construction!
+the "learn more" section is still under construction!
