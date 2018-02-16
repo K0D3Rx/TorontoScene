@@ -1,0 +1,195 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+img{ 
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: "Varela Round", sans-serif;
+	line-height: 1.6;
+} 
+
+p{
+    margin-bottom: 1.8em;
+    color:#1B3865
+}
+
+h2{
+    color: #0D4F8B;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Navigation ---- */
+
+.main-header,
+.main-footer{
+    text-align: center;
+}
+
+.main-nav a{
+    text-transform: uppercase;
+    font-size: .95em;
+    color: #0D4F8B;
+    padding-left: 15px;
+}
+
+.headline a:hover,
+.button:hover,
+.main-nav a:hover{
+    color: #ED1C24;
+}
+
+
+.headline a{
+    color: #1B3865;
+}
+
+.button{
+    background-color: skyblue;
+    color: #1B3865;
+    padding:6px;
+    border-radius: 10px;
+    font-size: 1.02em
+}
+
+/* ---- Layout Containers ---- */
+
+.scene,
+.subheadline{
+    color: #1B3865;
+}
+
+.main-footer{
+    padding: 2em 0;
+	margin-top: 30px;
+}
+
+.banner,
+.main-footer{
+    text-align: center;
+    background-color: skyblue;
+}
+
+.CN{
+    width: 190px;
+}
+
+.banner{
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+}
+
+.col{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media(min-width:750px){
+    .main-header,
+    .main-nav,
+    .container{
+        display: flex;
+    }
+    
+    .main-header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .col{
+        flex: 1 50%;
+    }
+    
+    .container{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media(min-width:1025px){
+    .main-header{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 10px 0 50px;
+    }
+    .main-nav{
+        padding-top: .5em;
+}
+    .col{
+        flex-basis: 0;
+    }
+    
+    .tertiary{
+        flex: 2;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
